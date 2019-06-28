@@ -155,7 +155,7 @@ h1{
 .about{
 	font-size: 2rem;
 	position: absolute;
-	padding: 1em;
+	padding: 3em;
 	border: dotted 1px #000;
 	background-color: rgba(0, 0, 0, 0.5);
 	color: white;
