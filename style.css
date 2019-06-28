@@ -67,15 +67,16 @@ ul{
 
 a{
 	text-decoration: none;
+	
 }
 a:link{
-	color: #E06C09
+	color: #E06C09;	
 	cursor: pointer;
 
 }
 
 a:visited{
-	color:#E06C09;
+	color: #E06C09;
 	cursor: pointer;
 }
 
