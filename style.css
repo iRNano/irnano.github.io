@@ -116,13 +116,13 @@ a:active{
 }
 
 h5{
-	margin-bottom: 0;
+	margin-bottom: 1em;
 	color: white;
 }
 
 h1{
 	color: #E06C09; /*ORANGE*/
-	font-size: 2.5rem;
+	font-size: 3rem;
 }
 
 
@@ -157,11 +157,11 @@ h1{
 .about{
 	font-size: 2rem;
 	position: absolute;
-	padding: 3em;
+	padding: 2.5em;
 	border: dotted 1px #000;
 	background-color: rgba(0, 0, 0, 0.5);
 	color: white;
-	width: 60%;
+	width: 40%;
 	bottom: 2em;
 
 }
@@ -178,7 +178,7 @@ h1{
 	display: block;
 	background-color: #121010;
 	height: 100%;
-	padding-top: 5em;
+	padding-top: 2em;
 /*	padding: 5em;*/
 
 }
@@ -202,6 +202,10 @@ h1{
 .griditem{
 	align-self: center;
 	text-align: left;
+}
+
+.percent{
+	padding-left: .5em;
 }
 
 progress[value]{
@@ -385,7 +389,7 @@ input{
 	grid-template-columns: 1.5fr  1.25fr 1.25fr;
 	grid-template-rows: 1fr 1fr 1fr 1fr;
 	grid-gap: 1em 1em;
-	background-color: #121010;
+	background-color: #12101080;
 	padding:2em;
 	width: 50%;
 	margin: 0 auto;
@@ -397,10 +401,12 @@ input{
 	text-align: left;
 	padding: 1em;
 	padding-top: 0;
+
 }
 
 #contact{
 	margin: 0;
+	font-size: 2.5rem;
 }
 
 .phone{
