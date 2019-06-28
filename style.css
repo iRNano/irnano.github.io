@@ -1,58 +1,600 @@
 
-body,
-html {
-  width: 100%;
-  height: 100%; 
+html{
+	font-size: 1rem;
+	box-sizing: border-box;
 }
 
-body {
-  font-family: 'Montserrat', sans-serif;
+*,*:before, *:after{
+	box-sizing: inherit;
+}
+body{
+	margin: auto 0;
+	height: 100%;
+	padding: auto: 0;
+	font-family: 'Nunito Sans';
+	color: white;
 }
 
-hr {
-  max-width: 65px;
-  border-width: 3px;
-  border-color: #F05F44; 
+:hover{
+cursor: default;
+}
+/*NAVIGATION*/
+
+.nav{
+	display: flex;
+	height: 13vh;
+	background-color: #1E1D1D;
+	z-index: 20;
+	width: 100%;
+	justify-content: center;
+	font-size: 1.2rem;
+
+
+
 }
 
-.faded {
-  color: rgba(255, 255, 255, 0.8); 
+.fixie{
+	position: fixed;
+	top: 0;
 }
 
-header {
-  background-position: center;
-  background-image: url("header.jpg");
-  background-size: cover;
-  height: 100%;
+.links{
+	display: flex;
+	justify-content: flex-end;
+	list-style: none;
+	width: 60%;
 }
 
-header  hr {
-  margin-top: 200px;
-  margin-bottom: 30px; 
+.linkitem{
+	display: flex;
+	margin-top: auto;
+	color: #E06C09;
+	padding-left: 1em;
+	padding-right: 1em;
+
 }
 
-header h1 {
-  font-size: 2rem; 
+.push{
+	margin-right: auto;
+	text-align: left;
+	font-size: 2rem;
+	padding-left: 0;
 }
 
-.btn {
-  font-weight: 700;
-  text-transform: uppercase;
-  border-radius: 300px;
-  font-family: 'Montserrat', sans-serif;
+ul{
+	padding-left: 0;
 }
 
-.btn-xl {
-  padding: 1rem 2rem; 
+a{
+	text-decoration: none;
+}
+a:link{
+	color: #E06C09
+	cursor: pointer;
+
 }
 
-.btn-primary {
-  background-color: #F05F44;
-  border-color: #F05F44; }
-
-.btn-primary:hover {
-  background-color: #ee4b08;
-  border-color: #ee4b08;
-  border-width: 5px;
-  cursor: pointer;
+a:visited{
+	color:#E06C09;
+	cursor: pointer;
 }
+
+a:hover{
+	color: #E06C09;
+	cursor: pointer;
+}
+
+a:active{
+	color:white;
+	cursor: pointer;
+}
+
+/*PAGE WRAP*/
+
+.page-wrap{
+	background-color: white;
+	height: auto;
+	min-height: 100%;
+/*	padding-left: 10rem;
+	padding-right: 10rem;*/
+
+}
+
+/*COVER*/
+.cover{
+	display: block;
+	height: 100%;
+	text-align: center;
+	background-position: center;
+	background-size: cover;
+	background-image: url("https://raw.githubusercontent.com/iRNano/adrianvaldepenas/master/assets/header.jpg");
+	font-size: 2rem;
+	color: orange;
+	padding: 4em;
+}
+
+h5{
+	margin-bottom: 0;
+	color: white;
+}
+
+h1{
+	color: #E06C09; /*ORANGE*/
+	font-size: 2.5rem;
+}
+
+
+
+.namecover{
+	margin-top: 0;
+	margin-bottom: 0;
+	font-size: 7rem;
+	padding: 0;
+	line-height: .9em;
+}
+
+.lastname{
+	margin-bottom: 1em;
+}
+
+/*CONTENT*/
+
+	/*ABOUT*/
+.section{
+	display: flex;
+	background-color: #121010;
+	position: relative;
+	height: 13em;
+	justify-content: center;
+	padding: 1em;
+
+
+
+}
+
+.about{
+	font-size: 2rem;
+	position: absolute;
+	padding: 1em;
+	border: dotted 1px #000;
+	background-color: rgba(0, 0, 0, 0.5);
+	color: white;
+	width: 60%;
+	bottom: 2em;
+
+
+
+}
+
+	/*OTHER CONTENT*/
+
+/*h3{
+	margin: 0;
+	width: 100%;
+}*/
+
+.info{
+	text-align: center;
+	display: block;
+	background-color: #121010;
+	height: 100%;
+	padding-top: 5em;
+/*	padding: 5em;*/
+
+}
+
+	/*PROFESSIONAL*/
+
+.prof{
+	margin: 5em;
+	align-items: center;
+	background-color: #121010;
+
+}
+
+.grid{
+	width: 100%;
+	display: grid;
+	grid-template-columns: fit-content(200px) minmax(200px, 450px) fit-content(50px);
+	justify-content: center;
+}
+
+.griditem{
+	align-self: center;
+	text-align: left;
+}
+
+progress[value]{
+	-webkit-appearance:none;
+	appearance: none;
+	height: 40%;
+	width: 95%;
+	margin: 1em;
+
+}
+
+progress[value]::-webkit-progress-bar{
+	background-color: #eee;
+	border-radius: 2px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+}
+
+progress[value]::-webkit-progress-value{
+/*	background-image:
+		-webkit-linear-gradient(-45deg,
+								transparent 33%, rgba(0,0,0,.1) 33%,
+								rgba(0,0,0,.1) 66%, transparent 66%),
+		-webkit-linear-gradient(top,
+								rgba(255,255,255,.25),
+								rgba(0,0,0,.25)),
+		-webkit-linear-gradient(left, #09c, #f44);
+
+		border-radius: 2px;
+		background-size: 35px 20px, 100% 100%, 100% 100%;*/
+		background-color: #E06C09;
+}
+
+
+/*EXPERIENCE*/ 
+
+/*TIMELINE*/
+
+.exp{
+	margin: 5em;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #3B3B3B;
+	padding: 5em;
+}
+
+
+/* Set a background color */
+/*body {
+  background-color: #474e5d;
+  font-family: Helvetica, sans-serif;
+}*/
+
+/* The actual timeline (the vertical ruler) */
+.timeline {
+  position: relative;
+  max-width: 50%;
+  margin: 0 auto;
+}
+
+.h1timeline{
+	margin: 0;
+	font-size: 2rem;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 3px;
+  background-color: white;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+/* Container around content */
+.container {
+  padding: 10px 40px;
+  position: relative;
+  background-color: #3B3B3B;
+  width: 50%;
+}
+
+/* The circles on the timeline */
+.container::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -11px;
+  background-color: #FF9F55;
+  border: 4px solid #FF9F55;
+  top: 0;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Place the container to the left */
+.left {
+  left: 0;
+  text-align: right;
+}
+
+/* Place the container to the right */
+.right {
+  left: 50%;
+  text-align: left;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+  left: -14px;
+}
+
+/* The actual content */
+.content {
+/*  padding: 20px 30px;*/
+  background-color: #3B3B3B;
+  position: relative;
+  border-radius: 6px;
+}
+
+.contentalign{
+	text-align: justify;
+}
+
+/*INTERESTS*/
+
+.interest{
+	margin: 5em;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.intlinks{
+	display: grid;
+	grid-template-columns: 180px 180px 180px 180px 180px;
+	justify-content: center;
+	align-items: center;
+	grid-gap: 1em;
+}
+
+.intgrid{
+	width: 100%;
+	align-items: center;
+	padding: 2em;
+}
+
+#label{
+	color: #E06C09;
+	margin: 0;
+}
+
+
+/*CONTACT*/
+
+
+.contact{
+	background-position: center;
+	background-image: url("https://raw.githubusercontent.com/iRNano/adrianvaldepenas/master/assets/contact.jpg");
+	background-size: cover;
+	font-size: 1.5rem;
+	padding: 5em;
+	padding-left: 10em;
+	padding-right: 10em;
+	color: white;
+	align-items: start;
+	background-color: grey;
+
+}
+
+input{
+	width: 100%;
+	height: 100%;
+	font-size: 1.5rem;
+}
+
+.contactgrid{
+	display: grid;
+	grid-template-columns: 1.5fr  1.25fr 1.25fr;
+	grid-template-rows: 1fr 1fr 1fr 1fr;
+	grid-gap: 1em 1em;
+	background-color: #121010;
+	padding:2em;
+	width: 50%;
+	margin: 0 auto;
+}
+
+.goal{
+	grid-row-start: span 4;
+	display: block;
+	text-align: left;
+	padding: 1em;
+	padding-top: 0;
+}
+
+#contact{
+	margin: 0;
+}
+
+.phone{
+	grid-row: 2;
+	grid-column: 2/ span 2;
+	width: 100%;
+}
+
+.message{
+	grid-row: 3 / span 2;
+	grid-column: 2/ span 2;
+	height: 100%;
+}
+
+.submit{
+	grid-row: 5;
+	grid-column: 2/ span 2;
+	background-color: #E06C09;
+	color:white;
+}
+
+::placeholder{
+	font-size: 1rem;
+}
+
+textarea{
+	resize:none;
+	font-size: 2rem;
+}
+
+h4{
+	margin: 0;
+}
+
+/*FOOTER*/
+
+footer{
+	display: flex;
+	background-color: #1E1D1D;
+	justify-content: center;
+}
+
+.footercontent{
+	display: flex;
+	width: 60%;
+	font-size: 1.2rem;
+	color: #E06C09;
+	
+}
+
+/*LINKS*/
+/*
+h1::before{
+	display: block;
+	content: "";
+	margin-top: -285px;
+	height: 285px;
+	visibility: hidden;
+	pointer-events: none;
+}*/
+
+
+/*MEDIA QUERIES*/
+
+@media screen and (max-width: 1920px){
+	/*NAVIGATION BAR*/
+	.nav{
+		height: 10vh;
+	}
+
+	/*COVER*/
+	.cover{
+	font-size: 1.5rem;
+	padding: 5em;
+	}
+
+	#name{
+		font-size: 5rem;
+	}
+
+	
+
+	/*ABOUT*/
+
+	.section{
+		height: 13em;
+		padding: 1em;
+
+	}
+
+	.about{
+		font-size: 1.5rem;
+		bottom: 4em;
+	}
+
+	/*CONTACT*/
+
+	.contractgrid{
+		font-size: 1rem;
+	}
+
+	.goal{
+		font-size: 1rem;
+	}
+
+	::placeholder{
+	font-size: 1rem;
+	}
+
+	textarea{
+		resize:none;
+		font-size: 1rem;
+	}
+
+	input{
+		font-size: 1rem;
+	}
+
+}
+
+@media screen and (max-width: 1223px){
+
+input{
+	font-size: 1rem;
+}
+
+
+.contactgrid{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+	grid-gap: 1em 1em;
+	padding: 2em;
+	font-size: 1;
+}
+
+.cgriditem{
+	height: 100%;
+}
+
+#contact{
+	margin: 0;
+}
+
+
+.goal{
+	/*grid-row-start: span 4;*/
+	grid-column: 1/ span 2;
+	grid-row: 1 / span 2;
+	display: block;
+	text-align: left;
+	font-size: 1rem;
+
+}
+
+.name{
+	grid-column: 1
+	grid-row: 3;
+}
+.phone{
+	grid-row: 4;
+	grid-column: 1/ span 2;
+	width: 100%;
+}
+
+.message{
+	grid-row: 5 / span 2;
+	grid-column: 1/ span 2;
+	height: 100%;
+}
+
+.submit{
+	grid-row: 7;
+	grid-column: 1/ span 2;
+	background-color: #E06C09;
+	color:white;
+}
+
+::placeholder{
+	font-size: 1rem;
+}
+
+textarea{
+	resize:none;
+	font-size: 1rem;
+}
+
+h4{
+	margin: 0;
+}
+}
+
+@media screen and (min-width : 320px){
+
+}
+
+
