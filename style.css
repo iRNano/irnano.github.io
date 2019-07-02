@@ -564,6 +564,15 @@ input{
 
 }
 
+.sr-only{
+	position: absolute;
+	left: -10000px;
+	height: 1px;
+	width: 1px;
+	top: auto;
+	overflow: hidden;
+}
+
 .name{
 	grid-column: 1
 	grid-row: 3;
