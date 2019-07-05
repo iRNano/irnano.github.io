@@ -199,7 +199,7 @@ h1{
 	justify-content: center;
 }
 
-.griditem{
+.prof-item{
 	align-self: center;
 	text-align: left;
 }
@@ -349,7 +349,7 @@ progress[value]::-webkit-progress-value{
 	grid-gap: 1em;
 }
 
-.intgrid{
+.int-item{
 	width: 100%;
 	align-items: center;
 	padding: 2.75em;
@@ -545,7 +545,7 @@ input{
 
 }
 
-.cgriditem{
+.contact-item{
 	height: 100%;
 }
 
